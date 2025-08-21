@@ -52,7 +52,7 @@ Each folder contains a separate exercise with step-by-step practice code.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<your-username>/drf-full-course-exercises.git
+   git clone https://github.com/md-ajim/drf-full-course-exercises.git
    cd drf-full-course-exercises
    ```
 
