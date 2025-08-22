@@ -52,6 +52,18 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+REST_FRAMEWORK ={
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication'
+    ],
+    'DEFAULT_PERMISSIONS_CLASSES':[
+        # 'rest_framework.authentication.IsAuthenticated'
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+
+
 ROOT_URLCONF = "mydrfproject.urls"
 
 TEMPLATES = [
