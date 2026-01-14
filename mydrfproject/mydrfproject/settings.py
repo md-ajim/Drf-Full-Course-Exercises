@@ -21,7 +21,7 @@ import os
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-p9u%a1g*uvjyl&*k!*n+mds&742vdnfvcd8syk_uj2w=_*xhip"
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -94,7 +94,7 @@ DATABASES = {
             'NAME' : os.environ.get('DB_NAME'),
             'USER': os.environ.get('DB_USER'),
             'PASSWORD': os.environ.get('BD_PASSWORD'),
-            'HOST' : os.environ.get('DB_HOST'),
+            'HOST' : os.environ.get('DB_HOST', 'localhost'),
             'PORT' : os.environ.get('DB_PORT')
        }    
 }
