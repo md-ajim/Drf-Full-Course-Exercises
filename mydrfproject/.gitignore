@@ -1,4 +1,4 @@
 # Python
-mydrfproject/.env
+.env
 *.pyc /__pycache__/
 *.py[cod]
